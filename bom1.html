@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    /* fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+       .then(response => {
+            for(i=0; i<response.length;i++){
+                 document.write(`
+                <ul>   
+                <li>${response[i].id}</li>
+                <li>${response[i].name}</li>
+                <li>${response[i].email}</li>
+                 </ul>
+                `)
+             }
+         })
+        var a= 12
+        function sum(){
+        console.log(a+a);
+      }
+     sum()*/
+    //  var a = (prompt("Enter a table"))
+     
+    //  for(i=1; i<=10;i++){
+    //     document.writeln(`
+    //         <ul>
+    //             <li>${a*[i]}</li>
+    //             </ul>
+
+    //     `)
+        
+    //  }
+    function Submit(){
+        let num = document.getElementsByTagName('input')[0].value;
+        let section2 = document.getElementsByTagName('section')[1];
+
+        section2.innerText='';
+
+        for(i=1; i<=10;i++){
+            let t =i*num;
+            section2.innerText+='\n'+t+'\n';
+
+        }
+        document.getElementsByTagName('input')[0].value="";
+    }
+    
+
+
+    </script>
+</body>
+</html>
